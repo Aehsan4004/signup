@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure body takes full viewport height */
+    overflow: hidden; /* Prevent scrollbars if content overflows */
+}
+
+.container {
+    display: flex;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #fff;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.left-section {
+    flex: 1;
+    background: url('wholesale.jpg') no-repeat center center/cover;
+    position: relative;
+    min-width: 0; /* Prevent flex shrinkage issues */
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; /* Adjust based on your logo size */
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0; /* Prevent flex shrinkage issues */
+}
+
+.right-section h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.right-section p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.right-section h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+#password, #confirm-password {
+    border-color: #dc3545; /* Red border for passwords as in the image */
+}
+
+.create-account-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+.create-account-btn:hover {
+    background-color: #5a6268;
+}
+
+.right-section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.right-section a:hover {
+    text-decoration: underline;
+}
+
+.photo-credit {
+    font-size: 0.7em;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
